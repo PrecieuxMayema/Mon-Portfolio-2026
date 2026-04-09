@@ -194,3 +194,206 @@ footer a:hover {
     color :var(--orange-vif);
     transform: translateY(-3px);
 }
+
+main {
+    padding: 40px;
+    background: #f5f5f5;
+}
+
+main h1 {
+    text-align: center;
+    color: var(--violet-fonce);
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+main h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--violet-doux);
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+.projets {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carte {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0, 0, 0.08);
+    display: flex;
+    transition: 0.3s ease;
+    overflow: hidden;
+    flex-direction: column;
+    height: 100%;
+}
+
+.carte:hover {
+    transform: rotateY(-8px);
+    box-shadow: 0 6px 16px rgba(0,0, 0, 0.15);
+}
+.carte img {
+    width: 100%;
+    height: 250PX;
+    object-fit: cover;
+    border-bottom: 4px solid var(--violet-doux);
+}
+
+.contenu {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 15px;
+    gap: 10px;
+}
+
+.contenu h3 {
+    margin: 10px 0;
+    color: var(--violet-fonce);
+}
+
+.contenu p {
+    font-size: 18px;
+    color: var(--gris-fonce);
+    margin-bottom: 5px;
+}
+
+.bouton span {
+    display: inline-block;
+    background: var(--gris-tres-clair);
+    color: var(--gris-fonce);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.lien {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--gris-clair);
+    padding: 12px 15px;
+ }
+
+.lien a {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--gris-tres-fonce);
+    font-size: 14px;
+}
+
+.lien i {
+    margin-right: 5px;
+}
+
+.lien a:hover {
+    color: var(--violet-doux);
+}
+
+.contact-container {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-container h1 {
+    color: var(--violet-doux);
+    margin-bottom: 30px;
+}
+
+.contact-card {
+    background-color: var(--gris-tres-clair);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-info {
+    text-align: left;
+    border-bottom: 1px solid var(--gris-clair);
+    padding-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: var(--gris-tres-fonce);
+}
+
+.social-links {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: var(--violet-fonce);
+    font-weight: bold;
+}
+
+.social-links i {
+    font-size: 1.2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: var(--gris-fonce);
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid var(--gris-clair);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--violet-doux);
+}
+
+.btn-submit {
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background0.3s;
+}
+
+.btn-submit:hover {
+    background-color: var(--violet-fonce);
+}
